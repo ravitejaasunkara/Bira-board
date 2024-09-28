@@ -28,7 +28,7 @@ public class TestController {
     private UserRepository userRepository;
 
     private Logger logger = LoggerFactory.getLogger(TestController.class);
-    @GetMapping("/organisation/")
+    @GetMapping("/organisation")
     public ResponseEntity<Organisation> testOrganisation() throws Exception {
         Organisation organisation = new Organisation();
         organisation.setOrganisationName("Google");
